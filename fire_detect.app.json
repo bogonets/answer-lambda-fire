@@ -13,7 +13,8 @@
             {"type": "pip", "src": "numpy"},
             {"type": "pip", "src": "tensorflow"},
             {"type": "pip", "src": "opencv-python"},
-            {"type": "pip", "src": "imageai"}
+            {"type": "pip", "src": "imageai"},
+            {"type": "pip", "src": "keras"}
         ],
         "engines": ">=1.0.2",
         "environment": {
@@ -25,7 +26,7 @@
             "ko": "추론"
         },
         "descriptions": {
-            "en": "Detection by Yolov4.",
+            "en": "Detection by Yolov3.",
             "ko": "."
         },
         "documentation_mime": "text",
@@ -34,7 +35,7 @@
     },
     "controls": {
         "input": "image",
-        "output": ["image", "bboxes"]
+        "output": ["draw_image", "bboxes"]
     },
     "props": [
         {
